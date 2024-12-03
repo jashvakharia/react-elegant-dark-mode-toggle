@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Moon, Sun } from 'lucide-react';
+import { DarkModeToggleProps } from './types';
 
 const DarkModeToggle = ({ 
   onChange, 
@@ -14,7 +15,7 @@ const DarkModeToggle = ({
     light: 'white',
     dark: '#4a4a4a'
   }
-}) => {
+}: DarkModeToggleProps) => {
   const [mode, setMode] = useState(initialMode);
 
   useEffect(() => {
